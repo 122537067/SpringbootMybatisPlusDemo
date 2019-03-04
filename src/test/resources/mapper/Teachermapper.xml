@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.eangaie.engmini.mapper.TeacherMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.eangaie.engmini.entity.Teacher">
+        <id column="teacher_id" property="teacherId" />
+        <result column="student_id" property="studentId" />
+        <result column="open_id" property="openId" />
+        <result column="teacher_name" property="teacherName" />
+        <result column="teacher_sex" property="teacherSex" />
+        <result column="teacher_edu" property="teacherEdu" />
+        <result column="head_teacher_gra" property="headTeacherGra" />
+        <result column="head_teacher_dip" property="headTeacherDip" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        teacher_id AS teacherId, student_id AS studentId, open_id AS openId, teacher_name AS teacherName, teacher_sex AS teacherSex, teacher_edu AS teacherEdu, head_teacher_gra AS headTeacherGra, head_teacher_dip AS headTeacherDip
+    </sql>
+
+</mapper>
